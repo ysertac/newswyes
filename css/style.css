@@ -10,6 +10,16 @@ html
     font-size: 10px;
 }
 
+:root
+{
+    --tech: darkcyan;
+    --healthcare: greenyellow;
+    --science: green;
+    --sport: aqua;
+    --economy: orange;
+    --policy: red;
+}
+
 body
 {
     font-family: 'Lato', sans-serif;
@@ -56,6 +66,7 @@ p
 {
     margin: 0 auto;
     padding: 0 4rem;
+    max-width: 1300px;
 }
 
 .btnstyle
@@ -76,13 +87,29 @@ p
     transition: 500ms;
 }
 
+.mysocial
+{
+    justify-self: end;
+}
+
+.mysocial a
+{
+    margin: 0 .5rem;
+    color: aqua;
+}
+
+.mysocial a:hover
+{
+    color: black;
+}
+
 /*Navbar*/
 
 
 
 .mynav
 {
-    background-color: rgba(36, 184, 61, 0.45);
+    background-color: rgba(0, 0, 0, 0.45);
     position: fixed;
     width: 100%;
     top: 0;
@@ -119,36 +146,22 @@ p
 
 .mynav li a
 {
-    color: yellow;
+    color: greenyellow;
 }
 
 .mynav li a.active
 {
-    background-color: #000;
+    background: linear-gradient(to right,red,blue);
 }
 
 .mynav li a:hover
 {
-    background-color: yellow;
-    color: black;
+    background: linear-gradient(to left, red, blue);
+    color: white;
     transition: .5s;
 }
 
-.mynav .mysocial
-{
-    justify-self: end;
-}
 
-.mynav .mysocial a
-{
-    margin: 0 .5rem;
-    color: aqua;
-}
-
-.mynav .mysocial a:hover
-{
-    color: black;
-}
 
 /*Main*/
 .main
@@ -186,32 +199,32 @@ p
 
 .category-sport
 {
-    background-color: aqua;
+    background-color: var(--sport);
 }
 
 .category-science
 {
-    background-color: green;
+    background-color: var(--science);
 }
 
 .category-healthcare
 {
-    background-color: greenyellow;
+    background-color: var(--healthcare);
 }
 
 .category-tech
 {
-    background-color: darkcyan;
+    background-color: var(--tech);
 }
 
 .category-politics
 {
-    background-color: red;
+    background-color: var(--policy);
 }
 
 .category-economy
 {
-    background-color: orange;
+    background-color: var(--economy);
 }
 
 .category
@@ -243,5 +256,127 @@ p
 .content .articles-container img
 {
     width: 100%;
-    height: 60%;
+    height: 50%;
+}
+
+/*Footer*/
+.footer
+{
+    background-color: dimgrey;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.footer li a
+{
+    color: #fff;
+}
+
+.footer-container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.3rem;
+}
+
+.footer-container > div:first-child,
+.footer-container > div:nth-child(2),
+.footer-container > div:nth-child(3),
+.footer-container > div:nth-child(4)
+{
+    margin-top: 4rem;
+}
+
+.footer img
+{
+    width: 150px;
+    padding: 2rem 2rem 0;
+}
+
+.footer input[type='email']
+{
+    width: 90%;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+.footer input[type='submit']
+{
+    width: 90%;
+}
+
+.footer-container li
+{
+    padding: .5rem 0;
+    border-bottom: 1px dotted #555;
+    width: 90%;
+}
+
+.footer-container li a:hover
+{
+    color: greenyellow;
+}
+
+.footer-container>div:last-child
+{
+    background-color: #555;
+    grid-column: 1/span 4;
+    text-align: center;
+    padding: .5rem;
+}
+
+/*Article Details*/
+.page-container
+{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2.5rem 0;
+    gap: 1.5rem;
+}
+
+.page-container > *:first-child
+{
+    grid-row: 1 / span 3;
+    text-align: justify;
+}
+
+.page-container > aside:nth-child(2)
+{
+    grid-row: 1 / span 2;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-container > *:last-child
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    grid-row: 3;
+    background-color: darkgrey;
+}
+
+.page-container .mycard li 
+{
+    padding: 0 1rem;
+    margin: .5rem 0;
+    list-style: none;
+}
+
+.page-container .mycard li :hover
+{
+    background-color: yellow;
+    display: block;
+}
+
+.page-container .mycard .meta
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    background-color: darkgray;
 }
