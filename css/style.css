@@ -259,6 +259,16 @@ p
     height: 50%;
 }
 
+.content .mycard a
+{
+    color: dimgrey;
+}
+
+.content .mycard a:hover
+{
+    color: brown;
+}
+
 /*Footer*/
 .footer
 {
@@ -379,4 +389,14 @@ p
     padding: 1rem;
     align-items: center;
     background-color: darkgray;
+}
+
+#footer .mycard a
+{
+    color: aqua;
+}
+
+#footer .mycard a:hover
+{
+    color: pink;
 }
