@@ -1,0 +1,302 @@
+@media (max-width:768px)
+{
+    html
+    {
+        font-size: 10px;
+    }
+
+    /*navbar*/
+    .mynav .mycontainer
+    {
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mynav .mysocial
+    {
+        display: none;
+    }
+
+    /*main section*/
+    #main .main-content
+    {
+        grid-column: 1 / span 2;
+    }
+
+    #main .main-content p
+    {
+        text-align: justify;
+    }
+
+    .main .category,
+    .main h1
+    {
+        font-size: 1.5rem;
+    }
+
+    .main .main-container
+    {
+        height: 50vh;
+    }
+
+    .main
+    {
+       font-size: 1.3rem;
+    }
+
+    /*content section*/
+    #content .articles-container
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #content h2,
+    #content h3
+    {
+        font-size: 1.7rem;
+    }
+
+    #content .category
+    {
+        font-size: 1.7rem;
+    }
+
+    #content p
+    {
+        font-size: 1.4rem;
+    }
+
+    /*footer*/
+    #footer h3
+    {
+        font-size: 1em;
+    }
+
+    #footer p
+    {
+        font-size: 1.4rem;
+    }
+
+    #footer li
+    {
+        font-size: 1.4rem;
+    }
+
+    #footer .mysocial
+    {
+        font-size: 1.1rem;
+    }
+
+    #footer img
+    {
+        width: 110px;
+    }
+
+    /*Article Details*/
+    .page-container
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .page-container *:first-child
+    {
+        grid-row: 1;
+    }
+    
+    .page-container > aside:nth-child(2)
+    {
+        grid-row: 2;
+    }
+
+    .page-container *:last-child
+    {
+        grid-row: 3;
+    }
+}
+
+
+@media (max-width:576px)
+{
+    html
+    {
+        font-size: 10px;
+    }
+
+    /*navbar*/
+    .mynav .mycontainer
+    {
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mynav .mysocial
+    {
+        display: none;
+    }
+
+    .mynav img
+    {
+        width: 40px;
+    }
+
+    /*main section*/
+    #main .main-content
+    {
+        grid-column: 1 / span 2;
+        padding-top: 4rem;
+    }
+
+    #main a
+    {
+        font-size: .8rem;
+    }
+
+    #main .main-content p
+    {
+        text-align: justify;
+        font-size: .9rem;
+    }
+
+    .main .category,
+    .main h1
+    {
+        font-size: 1rem;
+    }
+    
+    .main .mycontainer
+    {
+        padding: 0;
+    }
+
+    .main .category
+    {
+        line-height: .8rem;
+    }
+    .main .main-container
+    {
+        height: 30vh;
+    }
+
+    .main
+    {
+       font-size: 1.3rem;
+    }
+
+    /*content section*/
+    #content .articles-container
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #content h2
+    {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #content h3
+    {
+        font-size: 1.4rem;
+    }
+
+    #content .category
+    {
+        font-size: 1.3rem;
+    }
+
+    #content p
+    {
+        font-size: 1.2rem;
+    }
+
+    /*footer*/
+    #footer h3
+    {
+        font-size: .7em;
+    }
+
+    #footer p
+    {
+        font-size: 1.2rem;
+    }
+
+    #footer li
+    {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #footer .mysocial
+    {
+        font-size: 1.1rem;
+        display: inline;
+        margin: 0;
+        padding-bottom: 1rem;
+        grid-column: 1;
+        grid-row: 2; 
+        justify-self: start;
+        padding-top: .7rem;
+    }
+
+    #footer img
+    {
+        width: 110px;
+    }
+
+    #footer .footer-container
+    {
+        padding: 0 0;
+    }
+
+    #footer .footer-container div
+    {
+        margin-top: 1rem;
+    }
+
+    #footer .footer-container div ul
+    {
+        display: flex;
+        padding: 0;
+    }
+
+    #footer .footer-container
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    #footer .footer-container > div:last-child
+    {
+        grid-column: 1;
+    }
+
+
+    #footer .footer-container div .mysocial
+    {
+        
+        /* padding: 0; */
+    }
+
+    #footer .footer-container div img
+    {
+        padding: 0;
+        width: 60px;
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: end;
+        padding-right: 1rem;
+        
+    }
+
+    #footer .footer-container > div
+    {
+        border-bottom: 1px dashed black;
+    }
+
+    #footer .footer-container div:nth-child(4)
+    {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+    }
+}

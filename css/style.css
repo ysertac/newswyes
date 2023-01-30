@@ -313,6 +313,8 @@ p
 .footer input[type='submit']
 {
     width: 90%;
+    text-align: start;
+    padding-left: 0;
 }
 
 .footer-container li
