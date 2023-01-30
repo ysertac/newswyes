@@ -113,6 +113,26 @@
     {
         grid-row: 3;
     }
+    
+    .page-container h1
+    {
+        font-size: .8em;
+    }
+
+    .page-container small
+    {
+        font-size: 1rem;
+    }
+
+    .page-container .category
+    {
+        font-size: 1rem;
+    }
+
+    .page-container p
+    {
+        font-size: 1rem;
+    }
 }
 
 
